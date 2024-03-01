@@ -1,59 +1,66 @@
 html {
-  box-sizing: border-box;
   width: 100%;
   height: 100%;
+  box-sizing: border-box;
 }
 
 *,
 *:before,
 *:after {
-  box-sizing: inherit;
+  margin: 0;
   padding: 0;
-  margin: 0;
+  box-sizing: inherit;
 }
+
 body {
-  font-family: sans-serif;
-  height: 100%;
   margin: 0;
-  background: #261c33;
+  height: 100%;
+  display: flex;
   overflow: hidden;
-  display: flex; 
-  align-items: center; 
-  justify-content: center 
+  align-items: center;
+  background: #261c33;
+  justify-content: center;
+  font-family: sans-serif;
 }
 
 h2 {
+  margin: 20px;
+  font-size: 40px;
   color: #8d81f3;
   text-align: center;
-  font-size: 40px;
-  margin: 20px;
 }
+
 main {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
   height: 420px;
-  max-width: 768px;
+  display: flex;
   margin: 0 auto;
-  font-family: monospace, sans-serif;
   font-size: 22px;
+  max-width: 768px;
+  align-items: center;
+  justify-content: space-around;
+  font-family: monospace, sans-serif;
 }
-main label{
+
+main label {
   display: block;
 }
+
 main input[type="range"] {
+  width: 200px;
   display: block;
   margin-bottom: 10px;
-  width: 200px;
 }
+
 section.settings {
   width: 50%;
   z-index: 2;
 }
+
 .box-container {
   padding: 50px;
   border: 1px solid #8d81f3;
 }
+
 .box {
   width: 150px;
   height: 150px;
@@ -62,15 +69,15 @@ section.settings {
 
 button {
   background-color: #8d81f3;
+  border: none;
   color: #fff;
-  display: inline-block;
-  font-size: 20px;
   padding: 10px;
   outline: none;
-  border: none;
+  font-size: 20px;
   margin-right: 10px;
+  display: inline-block;
 }
 
-label{
+label {
   color: #fff;
 }
